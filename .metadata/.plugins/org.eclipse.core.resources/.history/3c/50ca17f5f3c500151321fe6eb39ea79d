@@ -1,0 +1,10 @@
+package Mobile;
+
+public class MotorcycleForSale extends VehicleForSale  {
+
+	public MotorcycleForSale(String brand, String model) {
+		super(brand, model);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,40 @@
+package Mobile;
+
+public class Dealership extends Seller {
+
+	private String address;
+	
+	public Dealership(String phoneNumber) {
+		super(phoneNumber);
+		
+	}
+
+	@Override
+	public void addPoster(VehicleForSale vehicle) {
+		
+		
+	}
+
+	@Override
+	public void removePoster(VehicleForSale vehicle) {
+		
+		
+	}
+
+	@Override
+	public void updatePOster(VehicleForSale vehicle) {
+		
+		
+	}
+
+	public String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(String address) {
+		if(address != null && !address.equals("")){
+			this.address = address;
+		}
+	}
+
+}

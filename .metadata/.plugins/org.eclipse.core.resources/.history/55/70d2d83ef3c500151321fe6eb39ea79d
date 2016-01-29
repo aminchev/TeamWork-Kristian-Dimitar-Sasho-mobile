@@ -1,0 +1,9 @@
+package Mobile;
+
+public class AutomobileForSale extends VehicleForSale{
+
+	public AutomobileForSale(String brand, String model) {
+		super(brand, model);
+	}
+
+}

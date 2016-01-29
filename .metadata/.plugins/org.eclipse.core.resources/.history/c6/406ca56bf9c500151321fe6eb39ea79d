@@ -1,0 +1,15 @@
+package Mobile;
+
+public class TruckForSale extends VehicleForSale {
+
+	private boolean hasTachograph;
+	private boolean hasBoard;
+	private int 
+	
+	public TruckForSale(String brand, String model) {
+		super(brand, model);
+	}
+	
+	
+
+}

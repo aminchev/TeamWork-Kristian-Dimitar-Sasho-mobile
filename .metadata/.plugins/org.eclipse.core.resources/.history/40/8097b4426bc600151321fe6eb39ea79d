@@ -1,0 +1,49 @@
+package Mobile;
+
+public class Demo {
+	public static void main(String[] args) {
+		Storage testStorage = Storage.getStorage();
+		VehicleForSale car1 = new AutomobileForSale("Ford", "Eskort");
+		VehicleForSale car2 = new AutomobileForSale("VW", "Polo");
+		VehicleForSale truck1 = new TruckForSale("Volvo", "JS100");
+		VehicleForSale truck2 = new TruckForSale("Zil", "AB57");
+		VehicleForSale bus1 = new BusForSale("Iveco", "Pfff");
+		VehicleForSale bus2 = new BusForSale("Chavdar", "Ruski");
+		VehicleForSale motor1 = new MotorcycleForSale("Suzuki", "GSXR8");
+		VehicleForSale motor2 = new MotorcycleForSale("Honda", "f4");
+		
+		Poster post1 = new Poster(15, false);
+		Poster post2 = new Poster(21, true);
+		Poster post3 = new Poster(10, false);
+		Poster post4 = new Poster(30, true);
+		Poster post5 = new Poster(20, true);
+		
+		car1.setPoster(post1);
+		car2.setPoster(post2);
+		truck1.setPoster(post3);
+		truck2.setPoster(post4);
+		bus1.setPoster(post5);
+		
+		post1.setVehicle(car1);
+		post2.setVehicle(car2);
+		post3.setVehicle(truck1);
+		post4.setVehicle(truck2);
+		post5.setVehicle(bus1);
+		
+//		testStorage.posters.add(post1);
+//		testStorage.posters.add(post2);
+//		testStorage.posters.add(post3);
+//		testStorage.posters.add(post4);
+//		testStorage.posters.add(post5);
+		
+		System.out.println(testStorage.posters.size());
+		
+		Seller ivan = new PrivateSeller("Ivan", "12345", "0897123456");
+		ivan.addPoster(car1);
+		ivan.addPoster(car2);
+		ivan.addPoster(truck1);
+		System.out.println(testStorage.posters.size());
+		ivan.addPoster(motor2);
+		
+	}
+}

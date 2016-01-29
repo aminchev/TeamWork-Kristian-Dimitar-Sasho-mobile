@@ -1,0 +1,20 @@
+package Mobile;
+
+public abstract class Seller implements ISeller {
+	private String phoneNumber;
+	private Poster[] posters;
+	
+	public Seller(String phoneNumber) {
+		this.setPhoneNumber(phoneNumber);
+	}
+
+	public String getPhoneNumber() {
+		return this.phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		if(phoneNumber !=null && !phoneNumber.equals("")){
+			this.phoneNumber = phoneNumber;
+		}
+	}
+}

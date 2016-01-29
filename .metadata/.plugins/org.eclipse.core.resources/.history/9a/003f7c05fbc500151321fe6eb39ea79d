@@ -1,0 +1,9 @@
+package Mobile;
+
+public abstract class Seller implements ISeller {
+	private String phoneNumber;
+	
+	public Seller(String phoneNumber) {
+		
+	}
+}

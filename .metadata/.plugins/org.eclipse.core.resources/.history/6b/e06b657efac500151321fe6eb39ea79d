@@ -1,0 +1,5 @@
+package Mobile;
+
+public interface ISeller {
+
+}

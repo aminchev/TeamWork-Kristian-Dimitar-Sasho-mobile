@@ -1,0 +1,36 @@
+package Mobile;
+
+public class PrivateSeller extends Seller {
+
+	private String town;
+	
+	public PrivateSeller(String phoneNumber) {
+		super(phoneNumber);
+	}
+
+	@Override
+	public void addPoster(VehicleForSale vehicle) {
+			
+	}
+
+	@Override
+	public void removePoster(VehicleForSale vehicle) {
+			
+	}
+
+	@Override
+	public void updatePOster(VehicleForSale vehicle) {
+		
+	}
+
+	public String getTown() {
+		return this.town;
+	}
+
+	public void setTown(String town) {
+		if(town !=null && !town.equals("")){
+			this.town = town;
+		}
+	}
+
+}

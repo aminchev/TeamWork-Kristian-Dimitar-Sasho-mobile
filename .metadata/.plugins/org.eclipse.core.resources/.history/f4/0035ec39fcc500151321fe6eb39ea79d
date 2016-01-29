@@ -1,0 +1,37 @@
+package Mobile;
+
+public class MotorcycleForSale extends VehicleForSale  {
+
+	private boolean hasGlass;
+	private boolean hasSidecar;
+	private boolean hasWaterCooling;
+	
+	public MotorcycleForSale(String brand, String model) {
+		super(brand, model);
+	}
+
+	 boolean getHasGlass() {
+		return this.hasGlass;
+	}
+
+	 void setHasGlass(boolean hasGlass) {
+		this.hasGlass = hasGlass;
+	}
+
+	 boolean getHasSidecar() {
+		return this.hasSidecar;
+	}
+
+	 void setHasSidecar(boolean hasSidecar) {
+		this.hasSidecar = hasSidecar;
+	}
+
+	 boolean getHasWaterCooling() {
+		return this.hasWaterCooling;
+	}
+
+	 void setHasWaterCooling(boolean hasWaterCooling) {
+		this.hasWaterCooling = hasWaterCooling;
+	}
+
+}

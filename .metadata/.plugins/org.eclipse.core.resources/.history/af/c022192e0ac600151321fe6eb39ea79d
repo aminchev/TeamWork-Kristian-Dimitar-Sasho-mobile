@@ -1,0 +1,19 @@
+package Mobile;
+
+import java.util.ArrayList;
+
+public class Storage {
+	ArrayList<Poster> posters = new ArrayList<Poster>();
+	private static Storage ourStorage = null;
+
+	private Storage() {
+		System.out.println("We made storage!");
+	}
+
+	public static Storage getStorage() {
+		if (ourStorage == null) {
+			ourStorage = new Storage();
+		}
+		return ourStorage;
+	}
+}

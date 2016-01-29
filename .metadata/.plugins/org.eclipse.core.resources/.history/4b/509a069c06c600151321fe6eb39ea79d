@@ -1,0 +1,42 @@
+package Mobile;
+
+import java.util.Arrays;
+
+public abstract class Seller extends User implements ISeller {
+	private String phoneNumber;
+	private Poster[] posters;
+	
+	
+	public Seller(String userName, String password, String phoneNumber) {
+		super(userName, password);
+		this.setPhoneNumber(phoneNumber);
+	}
+
+	
+	
+//	public Seller(String phoneNumber) {
+//		this.setPhoneNumber(phoneNumber);
+//	}
+
+	public String getPhoneNumber() {
+		return this.phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		if(phoneNumber !=null && !phoneNumber.equals("")){
+			this.phoneNumber = phoneNumber;
+		}
+	}
+
+	public Poster[] getPosters() {
+		return Arrays.copyOf(this.posters, this.posters.length);
+	}
+
+	public void setPosters(Poster[] posters) {
+		if(posters != null){
+			this.posters = Arrays.copyOf(posters, posters.length);
+		}
+	}
+	
+	
+}

@@ -1,0 +1,95 @@
+package Mobile;
+
+import java.util.Calendar;
+
+import javax.xml.crypto.Data;
+
+public abstract class VehicleForSale {
+	private String brand;
+	private String model;
+	private String engineType;
+	private int yearOfManifacture;
+	private String color;
+	private String category;
+	private int mileage;
+	private Seller seller;
+	
+	
+	public VehicleForSale(String brand, String model) {
+		
+	}
+
+
+	public String getBrand() {
+		return this.brand;
+	}
+
+	public String getModel() {
+		return this.model;
+	}
+
+	public String getEngineType() {
+		return this.engineType;
+	}
+
+	public void setEngineType(String engineType) {
+		if(engineType != null && !engineType.equals("")){
+			this.engineType = engineType;
+		}
+	}
+
+
+	public int getYearOfManifacture() {
+		return this.yearOfManifacture;
+	}
+	public void setYearOfManifacture(int yearOfManifacture) {
+		if(yearOfManifacture >1900 && yearOfManifacture <= Calendar.getInstance().get(Calendar.YEAR)){
+			this.yearOfManifacture = yearOfManifacture;
+		}
+	}
+	
+	public String getColor() {
+		return this.color;
+	}
+
+
+	public void setColor(String color) {
+		if(color != null && !color.equals("")){
+			this.color = color;
+		}
+	}
+
+
+	public String getCategory() {
+		return category;
+	}
+
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+
+	public int getMileage() {
+		return mileage;
+	}
+
+
+	public void setMileage(int mileage) {
+		this.mileage = mileage;
+	}
+
+
+	public Seller getSeller() {
+		return seller;
+	}
+
+
+	public void setSeller(Seller seller) {
+		this.seller = seller;
+	}
+	
+	
+	
+	
+}

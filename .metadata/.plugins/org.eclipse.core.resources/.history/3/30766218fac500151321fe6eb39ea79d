@@ -1,0 +1,39 @@
+package Mobile;
+
+public class BusForSale extends VehicleForSale {
+
+	private boolean hasTachograph;
+	private int countOfSeats;
+	private int countOfDoors;
+	
+	public BusForSale(String brand, String model) {
+		super(brand, model);
+	}
+
+	public boolean getHasTachograph() {
+		return this.hasTachograph;
+	}
+
+	public void setHasTachograph(boolean hasTachograph) {
+		this.hasTachograph = hasTachograph;
+	}
+
+	public int getCountOfSeats() {
+		return this.countOfSeats;
+	}
+
+	public void setCountOfSeats(int countOfSeats) {
+		if(countOfSeats>10){
+			this.countOfSeats = countOfSeats;
+		}
+	}
+
+	public int getCountOfDoors() {
+		return countOfDoors;
+	}
+
+	public void setCountOfDoors(int countOfDoors) {
+		this.countOfDoors = countOfDoors;
+	}
+
+}

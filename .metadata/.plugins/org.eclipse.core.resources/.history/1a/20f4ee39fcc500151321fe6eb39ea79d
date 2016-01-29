@@ -1,0 +1,53 @@
+package Mobile;
+
+public class TruckForSale extends VehicleForSale {
+
+	private static final int MAX_COUNT_OF_AXIS = 8;
+	private boolean hasTachograph;
+	private boolean hasBoard;
+	private int axisCount;
+	private int maxCarry;
+	
+	public TruckForSale(String brand, String model) {
+		super(brand, model);
+	}
+
+	public boolean getHasTachograph() {
+		return this.hasTachograph;
+	}
+
+	public void setHasTachograph(boolean hasTachograph) {
+		this.hasTachograph = hasTachograph;
+	}
+
+	public boolean getHasBoard() {
+		return this.hasBoard;
+	}
+
+	public void setHasBoard(boolean hasBoard) {
+		this.hasBoard = hasBoard;
+	}
+
+	public int getAxisCount() {
+		return this.axisCount;
+	}
+
+	public void setAxisCount(int axisCount) {
+		if(axisCount>0 && axisCount<=MAX_COUNT_OF_AXIS){
+			this.axisCount = axisCount;
+		}
+	}
+
+	public int getMaxCarry() {
+		return this.maxCarry;
+	}
+
+	public void setMaxCarry(int maxCarry) {
+		if(maxCarry>0){
+			this.maxCarry = maxCarry;
+		}
+	}
+	
+	
+
+}

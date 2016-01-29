@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract constant &apos;MAX_COUNT_OF_AXIS&apos; from expression &apos;8&apos;&#x0D;&#x0A;- Original project: &apos;MobileHierarchy&apos;&#x0D;&#x0A;- Constant name: &apos;MAX_COUNT_OF_AXIS&apos;&#x0D;&#x0A;- Constant expression: &apos;8&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Extract constant &apos;MAX_COUNT_OF_AXIS&apos;" flags="786432" id="org.eclipse.jdt.ui.extract.constant" input="/src&lt;Mobile{TruckForSale.java" name="MAX_COUNT_OF_AXIS" qualify="false" replace="false" selection="725 0" stamp="1454011054924" version="1.0" visibility="2"/>
+</session>
